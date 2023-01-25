@@ -28,11 +28,6 @@ const devices = async(req, res = response) => {
         password: process.env.SSH_PASSWORD,
     });
     console.log('Antes del json');
-    // const ssh = new SSH({
-    //     host: '167.235.238.223',
-    //     user: 'root',
-    //     pass: 'BUKmS5'
-    // });
     res.json({
         'msg' : 'Devices'
     });
