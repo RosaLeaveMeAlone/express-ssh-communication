@@ -55,16 +55,3 @@ const timedatectlAsync = async () => {
 module.exports = {
     timedatectlAsync,
 }
-
-const functionNormal = (resolve,reject) => {
-    if(algo) {
-        resolve('ok');
-    }
-    reject('error');
-}
-
-const functionPromesa = async () => {
-    return new Promise((resolve,reject) => {
-        functionNormal(resolve,reject);
-    })
-}
